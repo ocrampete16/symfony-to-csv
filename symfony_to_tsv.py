@@ -1,6 +1,7 @@
 import csv
 import dataclasses
 import hashlib
+import html
 import pathlib
 from typing import Iterator, List
 
@@ -37,8 +38,11 @@ class OutputRow:
 
     @property
     def code(self) -> str:
-        lines = self.raw_code.split("\n")
-        lines = [self._replace_leading_spaces_with_nbsp(line) for line in lines]
+        escaped_code = html.escape(self.raw_code)
+        lines = [
+            self._replace_leading_spaces_with_nbsp(line)
+            for line in escaped_code.split("\n")
+        ]
         return "<br>".join(lines)
 
     def __iter__(self) -> Iterator[str]:
