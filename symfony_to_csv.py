@@ -35,8 +35,8 @@ class CSVRow:
         identifier_str = f"{self.source}-{self.position}"
         return hashlib.sha1(identifier_str.encode()).hexdigest()
 
-    def __iter__(self) -> Iterator:
-        return iter((self.identifier, self.source, self.code))
+    def __iter__(self) -> Iterator[str]:
+        return iter((self.identifier, str(self.source), self.code))
 
 
 def create_csv_rows(doc_files: List[DocFile]) -> Iterator[CSVRow]:
