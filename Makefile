@@ -1,9 +1,9 @@
 .PHONY: code-quality
 
 code-quality:
-	black symfony_to_csv.py
-	mypy --ignore-missing-imports symfony_to_csv.py
-	pylint --disable=missing-docstring,too-few-public-methods symfony_to_csv.py
+	black symfony_to_tsv.py
+	mypy --ignore-missing-imports symfony_to_tsv.py
+	pylint --disable=missing-docstring,too-few-public-methods symfony_to_tsv.py
 
 symfony-docs/_build/html: symfony-docs
 	pip install --requirement symfony-docs/_build/.requirements.txt

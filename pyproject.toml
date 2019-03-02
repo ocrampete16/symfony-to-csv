@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "symfony-to-csv"
+name = "symfony-to-tsv"
 version = "0.1.0"
 description = ""
 authors = ["Marco Petersen <m@rcopetersen.com>"]

@@ -1,5 +1,5 @@
 *.egg-info/
 .mypy_cache/
-output.csv
+output.tsv
 pip-wheel-metadata/
 symfony-docs/

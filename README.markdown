@@ -1,4 +1,4 @@
-A script that extracts all code snippets from the Symfony documentation and exports them to a CSV file.
+A script that extracts all code snippets from the Symfony documentation and exports them to a TSV file.
 
 Useful for importing into a flashcard program or learning tool of some sort.
 
@@ -23,5 +23,5 @@ pip install poetry
 poetry install
 
 # 6. Run the script.
-python symfony_to_csv.py
+python symfony_to_tsv.py
 ```
