@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "symfony-to-csv"
+version = "0.1.0"
+description = ""
+authors = ["Marco Petersen <m@rcopetersen.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+beautifulsoup4 = "^4.7"
+lxml = "^4.3"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^18.3-alpha.0",allows-prereleases = true}
+pylint = "^2.3"
+mypy = "^0.670.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

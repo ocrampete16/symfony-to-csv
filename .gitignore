@@ -1,0 +1,5 @@
+*.egg-info/
+.mypy_cache/
+output.csv
+pip-wheel-metadata/
+symfony-docs/
