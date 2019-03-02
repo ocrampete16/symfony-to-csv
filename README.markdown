@@ -13,12 +13,15 @@ python3 -m venv .venv
 # 2. Activate the virtual environment.
 source .venv/bin/activate
 
-# 3. Install Poetry.
+# 3. Download and build the Symfony documentation.
+make symfony-docs/_build/html
+
+# 4. Install Poetry.
 pip install poetry
 
-# 4. Use Poetry to install the remaining dependencies.
+# 5. Use Poetry to install the remaining dependencies.
 poetry install
 
-# 5. Run the script.
+# 6. Run the script.
 python symfony_to_csv.py
 ```
